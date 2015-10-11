@@ -1,0 +1,22 @@
+[
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".EuCookieSheet"
+        },
+        "trigger": {
+            "if-domain": ["mobile.twitter.com"],
+            "url-filter": ".*"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#ecd_opt_in_banner"
+        },
+        "trigger": {
+            "if-domain": ["www.rockpapershotgun.com"],
+            "url-filter": ".*"
+        }
+    }
+]

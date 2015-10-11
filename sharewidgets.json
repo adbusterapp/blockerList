@@ -1,0 +1,335 @@
+{
+    "trigger": {
+		 "url-filter": "facebook.com",
+		 "load-type": ["third-party"]
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+		 "url-filter": "facebook.net",
+		 "resource-type": [
+		 	"script"
+		 ],
+	"load-type": ["third-party"]
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": ".*",
+        "if-domain": ["worldnewsdailyreport.com"]
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"ism_wrap\"]"
+    }
+},
+{
+    "trigger": {
+	    "if-domain": ["mako.co.il"],
+	    "url-filter": ".*"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".status_bar_v2"
+    }
+},
+{
+  "trigger": {
+    "url-filter": "shareaholic",
+    "resource-type": [
+		"script"
+	],
+	"load-type": ["third-party"]	
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+    "trigger": {
+	    "url-filter": "^https?://([^/]*\\.)?shareaholic\\.com/",
+        "resource-type": [
+				"script"
+			],
+ 	"load-type": ["third-party"]	
+   },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".shareaholic-share-buttons-container"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#social-after-wrapper"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".sharedaddy"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "social-tracking"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#social-after-wrapper"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"social-share\"]"
+    }
+},
+{
+    "trigger": {
+			"url-filter": "^https?://([^/]*\\.)?cnet\\.com/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#sharebar-modal-redesign"
+    }
+},
+{
+    "trigger": {
+			"url-filter": "^https?://([^/]*\\.)?about\\.com/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".s-btns"
+    }
+},
+{
+    "trigger": {
+			"url-filter": "^https?://([^/]*\\.)?techcrunch\\.com/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".social-cluster"
+    }
+},
+
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"social-share\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "bbc.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div:matches([class~=\"share-wrapper\"], [class~=\"story-share\"])"
+    }
+},
+{
+  "trigger": {
+    "url-filter": "bbcshare",
+    "resource-type": [
+		"script"
+	]
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+  "trigger": {
+    "url-filter": "plus.google.com",
+    "resource-type": [
+		"script"
+	],
+	"load-type": ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+  "trigger": {
+    "url-filter": "api.twitter.com",
+    "resource-type": [
+		"script"
+	],
+	"load-type": ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+  "trigger": {
+    "url-filter": "widgets.pinterest.com",
+    "resource-type": [
+		"script"
+	],
+	"load-type": ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+  "trigger": {
+    "url-filter": "linkedin.com/countserv/count/share",
+    "resource-type": [
+		"script"
+	],
+	"load-type": ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+},
+{
+    "trigger": {
+        "url-filter": "theverge.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".m-article__share-buttons"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "theverge.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#chorus-social-fixed-threshold"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "theverge.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#chorus-social-fixed"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "nytimes.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div:matches([class~=\"inline-share-wrapper\"], [class~=\"fixed-share-nav-outer\"])"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "ynet.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"BarShare\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "calcalist.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"bottomTools\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "calcalist.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "a:matches([class~=\"twitter_btn\"], [class~=\"facebook_btn\"], [class~=\"share_btn\"], [class~=\"whatsup_btn\"])"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "huffpost.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"share-bar\"]"
+    }
+},
+{
+    "trigger": {
+	    "url-filter": "d8rk54i4mohrb.cloudfront.net/js/reach.js",
+		"resource-type": [
+			"script"
+			],
+		"load-type": ["third-party"]
+  },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "sharethrough.com",
+		"resource-type": [
+			"script"
+			],
+		"load-type": ["third-party"]
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "go-mpulse.net",
+		"resource-type": [
+			"script"
+			],
+		"load-type": ["third-party"]
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "social-tracking",
+		"resource-type": [
+			"script"
+			],
+		"load-type": ["third-party"]
+    },
+    "action": {
+        "type": "block"
+    }
+}

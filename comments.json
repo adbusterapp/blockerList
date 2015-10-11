@@ -1,0 +1,172 @@
+{
+    "trigger": {
+		"url-filter": "comment-reply.min.js",
+        "if-domain": ["worldnewsdailyreport.com"],
+		 "resource-type": [
+		 	"script"
+		 ]
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+	    "url-filter": "^https?://([^/]*\\.)?mako\\.co.il/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#talkbacksContainer"
+    }
+},
+{
+    "trigger": {
+	    "url-filter": "^https?://([^/]*\\.)?mako\\.co.il/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#talkbacks_wrapper"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "comments.php"
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "livefyre"
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "disqus.com/embed.js",
+        "resource-type": [
+				"script"
+			],
+		"load-type": ["third-party"]	
+  	},
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "commentcount.js"
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#comments"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".comments"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#comments-container"
+    }
+},
+{
+    "trigger": {
+			"url-filter": "^https?://([^/]*\\.)?techcrunch\\.com/"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#fb-comment-container"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "^https?://"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "section[class~=\"comments\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "livefyre-",
+        "resource-type": [
+				"script"
+			]        
+    },
+    "action": {
+        "type": "block"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "ynet.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#artitbfooter"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "calcalist.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "div[class~=\"talkbacks\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "calcalist.co.il"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "a[class~=\"talkback_btn\"]"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "theverge.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".m-article__comments-section"
+    }
+},
+{
+    "trigger": {
+        "url-filter": "huffpost.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".comment-button"
+    }
+}
+
+
+
+
+
