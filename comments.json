@@ -1,3 +1,4 @@
+[
 {
     "trigger": {
 		"url-filter": "comment-reply.min.js",
@@ -165,8 +166,4 @@
         "selector": ".comment-button"
     }
 }
-
-
-
-
-
+]
