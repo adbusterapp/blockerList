@@ -1,3 +1,4 @@
+[
 {
     "trigger": {
 		 "url-filter": "facebook.com",
@@ -333,3 +334,4 @@
         "type": "block"
     }
 }
+]
